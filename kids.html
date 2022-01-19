@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------------------------------CSS Links------------------------------------------------------------- -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- ----------------------------------------Font Awesome Link----------------------------------------------------- -->
+    <script src="https://kit.fontawesome.com/66f2b45681.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- -----------------------------------------BootStrap Link------------------------------------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- -----------------------------------------Google FOnt Link----------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- ------------------------------------------Google Font Link Ends----------------------------------------------- -->
+    <title>Myntra-Online Shopping in India</title>
+    <link rel="shortcut icon" href="./assests/favicon.ico">
+</head>
+<body>
+    <p class="fs-5 fst-italic" style="background: black; color: white;"><marquee direction="right" behavior="alternate">Free delivery on all orders above &#x20B9; 599/- </marquee></p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd; margin-top: 1px;">
+            <div class="container-fluid">
+                <a href="#" class="nav-brand"><img src="./assests/logo.png" alt="logo" class="" width="60" height="40" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav fw-bold" style="padding: 5px; margin-left: 25px;">
+                      <li class="nav-item " style="padding-left: 5px;">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item" style="padding-left: 5px;">
+                        <a class="nav-link active" href="./men.html">Men</a>
+                      </li>
+                      <li class="nav-item" style="padding-left: 5px;">
+                        <a class="nav-link active" href="./women.html">Women</a>
+                      </li>
+                      <li class="nav-item" style="padding-left: 5px;">
+                        <a class="nav-link active" href="./kids.html">Kids</a>
+                      </li>
+                    </ul>
+                    <form class="d-none d-lg-flex" style="margin-left: 35px; width: 470px;" >
+                        <input class="form-control " type="search" placeholder="Search for products, brands and more" aria-label="Search" >
+                        <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                      </form>
+                    <div style="margin-left: 55px;" class="d-none d-lg-block">
+                        <button type="submit" class="btn btn-light position-relative" data-bs-toggle="modal" data-bs-target="#newcardmodal"><i class="fas fa-user" style="font-size: 20px;">
+                            Profile 
+                        </i></button>
+                        <!-- <button class="btn position-absolute end-0" type="submit" data-bs-toggle="modal" data-bs-target="#newcardmodal"><i class="far fa-user" style="font-size: 20px;"></i></button>
+                        <a class="cart position-absolute end-2" href="./cart.html" style="color: black; text-decoration: none;"><i class="fas fa-shopping-cart" style="font-size: 20px;"></i><span>+0</span></button> -->
+                         <a class="cart" href="./cart.html">   <button type="button" class="btn btn-light position-relative cart"><i class="fas fa-shopping-cart" style="font-size: 20px;">
+                                Cart <span class="position-absolute top-0 start-200 translate-middle badge rounded-pill bg-secondary">+0</span>
+                            </i></button></a>
+                         </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+    <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+    <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+    <div class="modal fade" id="newcardmodal" tabindex="-1" aria-labelledby="newcardmodallable" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="imageURL" class="form-label">Username</label>
+                        <input type="url" class="form-control" id="imageURL" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="taskTitle" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="taskTitle" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button  class="btn btn-primary" data-bs-dismiss="modal">
+                        LOGIN
+                    </button>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+       <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+       <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+       <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+    <div style="padding-top: 30px; padding-bottom: 30px; color: black; ">
+        <p class="text-center h3">OUR KID'S COLLECTION</p>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/4/12/9167083e-fe42-44ac-bc43-ed94fae8ecbc1618212451195-1.jpg" alt="t-shirt">
+  
+                    <div class="card-body">
+                        <h5 class="card-title">Maniac</h5>
+                        <p class="card-text">
+                            Solid Round Neck T-shirt
+                        </p>
+                        <h4 class="card-title">&#x20B9; 799</h4>
+  
+                        <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                            Add to Bag
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15198586/2021/8/19/eddad43c-961f-4a13-a292-4c3ce9032efd1629369602595Cottonsiblingtop1.jpg" alt="t-shirt">
+  
+                    <div class="card-body">
+                        <h5 class="card-title">H&M</h5>
+                        <p class="card-text">
+                            Boys Blue Cotton Sibling Top
+                        </p>
+                        <h4 class="card-title">&#x20B9; 599</h4>
+                          
+                        <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                            Add to Bag
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/12/5/e01a740c-1f62-47e6-87fa-210276b60e221607167721737-1.jpg" alt="t-shirt">
+  
+                    <div class="card-body">
+                        <h5 class="card-title">StyleStone</h5>
+                        <p class="card-text">
+                            Floral Print Flare Dress
+                        </p>
+                        <h4 class="card-title">&#x20B9; 1119</h4>
+                          
+                        <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                            Add to Bag
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11985624/2020/6/25/2f2e3507-09e0-4330-a9c0-818583f0cdac1593065483501WishKaroGirlsMaroonSolidFitandFlareDress1.jpg" alt="t-shirt">
+  
+                    <div class="card-body">
+                        <h5 class="card-title">Wish Karo</h5>
+                        <p class="card-text">
+                            Girls Maroon Flare Dress
+                        </p>
+                        <h4 class="card-title">&#x20B9; 2999</h4>
+                          
+                        <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                            Add to Bag
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/1/4/30bb9a17-439d-4685-96be-a6273ab9b48b1578094766052-1.jpg" alt="t-shirt">
+  
+                    <div class="card-body">
+                        <h5 class="card-title">LilPicks</h5>
+                        <p class="card-text">
+                            Printed Top with Palazzos
+                        </p>
+                        <h4 class="card-title">&#x20B9; 1899</h4>
+                          
+                        <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                            Add to Bag
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/1/21/dea3c0df-e616-423f-9e57-d0753944ab121611216686421-1.jpg" alt="t-shirt">
+  
+                    <div class="card-body">
+                        <h5 class="card-title">Cutiekins</h5>
+                        <p class="card-text">
+                            T-shirt with Shorts
+                        </p>
+                        <h4 class="card-title">&#x20B9; 1999</h4>
+                          
+                        <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                            Add to Bag
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        <div class="col-lg-3 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15115176/2021/8/11/50edd084-46e4-475d-9351-f37e610ab3ed1628701313772ClothingSet1.jpg" alt="t-shirt">
+
+                <div class="card-body">
+                    <h5 class="card-title">TINY MINY ME</h5>
+                    <p class="card-text">
+                        Printed T-shirt with Skirt</p>
+                    <h4 class="card-title">&#x20B9; 1099</h4>
+                      
+                    <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                        Add to Bag
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+    <div class="col-lg-3 mb-4">
+        <div class="card">
+            <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14843706/2021/8/26/4f2ba60b-874e-42e3-97f8-11e9b87d421a1629951681514SweatshirtsGAMEBEGINSBoysPyjamasMarksSpencerBoysSweatersMark1.jpg" alt="t-shirt">
+
+            <div class="card-body">
+                <h5 class="card-title">Marks & Spencer</h5>
+                <p class="card-text">
+                    Bodysuit with Dungarees
+                </p>
+                <h4 class="card-title">&#x20B9; 1799</h4>
+                  
+                <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                    Add to Bag
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gradient bg-dark text-center text-white" >
+    <!-- Grid container -->
+    <div class="container p-5 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/myntra" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/myntra" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="./index.html" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/myntra/" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/company/myntra/?originalSubdomain=in" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/user/myntradotcom" role="button"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+      © Aditi Jaiswal:
+      <a class="text-white" href="https://www.shapeai.tech/">ShapeAi</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+
+
+
+
+
+     <!-- -----------------Format------------------------------------------------------------------------------------------ -->
+     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+     <script src="./index.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------------------------------CSS Links------------------------------------------------------------- -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- ----------------------------------------Font Awesome Link----------------------------------------------------- -->
+    <script src="https://kit.fontawesome.com/66f2b45681.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- -----------------------------------------BootStrap Link------------------------------------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- -----------------------------------------Google FOnt Link----------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- ------------------------------------------Google Font Link Ends----------------------------------------------- -->
+    <title>Myntra-Online Shopping in India</title>
+    <link rel="shortcut icon" href="./assests/favicon.ico">
+</head>
+<body>
+    <p class="fs-5 fst-italic" style="background: black; color: white;"><marquee direction="right" behavior="alternate">Free delivery on all orders above &#x20B9; 599/- </marquee></p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd; margin-top: 1px;">
+            <div class="container-fluid">
+                <a href="#" class="nav-brand"><img src="./assests/logo.png" alt="logo" class="" width="60" height="40" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav fw-bold" style="padding: 5px;">
+                      <li class="nav-item " style="padding-left: 5px;">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item" style="padding-left: 5px;">
+                        <a class="nav-link active" href="./men.html">Men</a>
+                      </li>
+                      <li class="nav-item" style="padding-left: 5px;">
+                        <a class="nav-link active" href="./women.html">Women</a>
+                      </li>
+                      <li class="nav-item" style="padding-left: 5px;">
+                        <a class="nav-link active" href="./kids.html">Kids</a>
+                      </li>
+                    </ul>
+                    <form class="d-none d-lg-flex" style="margin-left: 35px; width: 470px;" >
+                        <input class="form-control " type="search" placeholder="Search for products, brands and more" aria-label="Search" >
+                        <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                      </form>
+                    <div style="margin-left: 55px;" class="d-none d-lg-block">
+                        <button type="submit" class="btn btn-light position-relative" data-bs-toggle="modal" data-bs-target="#newcardmodal"><i class="fas fa-user" style="font-size: 20px;">
+                            Profile 
+                        </i></button>
+                        <!-- <button class="btn position-absolute end-0" type="submit" data-bs-toggle="modal" data-bs-target="#newcardmodal"><i class="far fa-user" style="font-size: 20px;"></i></button>
+                        <a class="cart position-absolute end-2" href="./cart.html" style="color: black; text-decoration: none;"><i class="fas fa-shopping-cart" style="font-size: 20px;"></i><span>+0</span></button> -->
+                         <a class="cart" href="./cart.html">   <button type="button" class="btn btn-light position-relative cart"><i class="fas fa-shopping-cart" style="font-size: 20px;">
+                                Cart <span class="position-absolute top-0 start-200 translate-middle badge rounded-pill bg-secondary">+0</span>
+                            </i></button></a>
+                    </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+    <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+    <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+    <div class="modal fade" id="newcardmodal" tabindex="-1" aria-labelledby="newcardmodallable" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="mb-3">
+                      <label for="imageURL" class="form-label">Username</label>
+                      <input type="email" placeholder="abc@something.in"  class="form-control" id="imageURL" />
+                  </div>
+                  <div class="mb-3">
+                      <label for="taskTitle" class="form-label">Password</label>
+                      <input type="password" placeholder="Enter your password" class="form-control" id="taskTitle" />
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button onclick="addCard()" class="btn btn-primary" data-bs-dismiss="modal">
+                      LOGIN
+                  </button>
+              </div>
+          </div>
+      </div>
+
+  </div>
+     <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+     <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+     <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" style="padding-top: 30px; padding-bottom:30px;">
+        <div class="carousel-item active">
+          <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2021/9/24/0865ed21-71d1-4682-81ec-57b7bd7e9bfe1632495455934-Men-Casual_Desk.jpg" class="d-block w-100" alt="try&buy"/>
+        </div>
+        <div class="carousel-item">
+          <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2021/9/23/bccf1793-fdd4-496b-9e2a-7ef09ed41c061632407855786-Kurtas-Sets_Dk.jpg" class="d-block w-100 h-80"  alt="sale">
+        </div>
+        <div class="carousel-item">
+          <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2021/9/24/a83a26c1-7c63-4aad-ae5c-c296c7e473901632501075885-main-banner-3-DK.jpg" class="d-block w-100" alt="try">
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      </div>
+      <div>
+        <a href="https://play.google.com/store/apps/details?id=com.myntra.android"><img alt="play" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2021/9/24/a6ae8a21-c3cb-43c6-8fb2-d16878c337ec1632491529662-Download-App--Logo-with-Dates----Desktop.jpg" class="img-fluid"/></a>
+      </div>
+      <div style="padding-top: 30px; padding-bottom: 30px; color: black; ">
+        <!-- deals-------------------------------------------------------------------------------------------------- -->
+        <p class="h3">DEALS OF THE DAY</p>
+      </div>
+      <div class="card-group">
+        <div class="card" style="padding: 10px;">
+          <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2021/9/26/fb521a94-9562-4fcf-982d-f6355f8ce2bd1632664468276-BeautyBundles.jpg" class="card-img-top" alt="...">
+         </div>
+        <div class="card" style="padding: 10px;">
+          <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2021/9/26/e7c02508-fa16-4066-be41-111937badeeb1632664468250-Myntra-Unique-styles.jpg" class="card-img-top" alt="...">
+         </div>
+        <div class="card" style="padding: 10px;">
+          <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2021/9/26/c6a5ec95-d702-43c8-aade-1ececd4645341632664468223-festive-wear.jpg" class="card-img-top" alt="...">
+          </div>
+        <div class="card" style="padding: 10px;">
+          <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2021/9/26/106e7449-b447-4952-a11a-f8f70a14fbbd1632664468241-footwear--1-.jpg" class="card-img-top" alt="...">
+          </div>
+      </div>
+      <div style="padding-top: 30px; padding-bottom: 30px; color: black; ">
+        <p class="h3">OUR PRODUCTS</p>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./assests/kids1.png" alt="t-shirt">
+  
+                    <div class="card-body">
+                        <h5 class="card-title">Maniac</h5>
+                        <p class="card-text">
+                            Solid Round Neck T-shirt
+                        </p>
+                        <h4 class="card-title">&#x20B9; 799</h4>
+  
+                        <a href="#" class="btn btn-outline-primary btn-sm add-cart" >
+                            Add to Bag
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15198586/2021/8/19/eddad43c-961f-4a13-a292-4c3ce9032efd1629369602595Cottonsiblingtop1.jpg" alt="t-shirt">
+  
+                    <div class="card-body">
+                        <h5 class="card-title">H&M</h5>
+                        <p class="card-text">
+                            Boys Blue Cotton Sibling Top
+                        </p>
+                        <h4 class="card-title">&#x20B9; 599</h4>
+                          
+                        <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                            Add to Bag
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+              <div class="card">
+                  <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/12/5/e01a740c-1f62-47e6-87fa-210276b60e221607167721737-1.jpg" alt="t-shirt">
+
+                  <div class="card-body">
+                      <h5 class="card-title">StyleStone</h5>
+                      <p class="card-text">
+                          Floral Print Flare Dress
+                      </p>
+                      <h4 class="card-title">&#x20B9; 1119</h4>
+                        
+                      <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                          Add to Bag
+                      </a>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 mb-4">
+              <div class="card">
+                  <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11985624/2020/6/25/2f2e3507-09e0-4330-a9c0-818583f0cdac1593065483501WishKaroGirlsMaroonSolidFitandFlareDress1.jpg" alt="t-shirt">
+
+                  <div class="card-body">
+                      <h5 class="card-title">Wish Karo</h5>
+                      <p class="card-text">
+                          Girls Maroon Flare Dress
+                      </p>
+                      <h4 class="card-title">&#x20B9; 2999</h4>
+                        
+                      <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                          Add to Bag
+                      </a>
+                      
+                  </div>
+              </div>
+          </div>
+          <!-- KIDS collection ends here------------------------------------------------------------------------------- -->
+          <div class="col-lg-3 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10949320/2019/11/26/312fc171-a979-4fc0-94e1-2551b39a38091574772620706-GERUA-Women-Dresses-531574772618822-1.jpg" alt="t-shirt">
+
+                <div class="card-body">
+                    <h5 class="card-title">GERUA</h5>
+                    <p class="card-text">
+                        Off-White & Grey Dress
+                    </p>
+                    <h4 class="card-title">&#x20B9; 1999</h4>
+
+                    <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                        Add to Bag
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/6604939/2018/9/21/f1c8ade6-053d-4ec1-9b4c-dafb05023bfe1537530937834-asd-6041537530937677-1.jpg" alt="t-shirt">
+
+                <div class="card-body">
+                    <h5 class="card-title">STREET 9</h5>
+                    <p class="card-text">
+                        Navy Blue Solid Maxi Dresst
+                    </p>
+                    <h4 class="card-title">&#x20B9; 1699</h4>
+                      
+                    <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                        Add to Bag
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7287261/2018/9/21/b284470d-0d0e-4d38-8c74-7690d3a1229c1537528416112-STREET-9-Women-Peach-Coloured-Embellished-Net-Peplum-Top-8661537528415928-1.jpg" alt="t-shirt">
+
+                <div class="card-body">
+                    <h5 class="card-title">STREET 9</h5>
+                    <p class="card-text">
+                        Dusty Pink Embellished Top
+                    </p>
+                    <h4 class="card-title">&#x20B9; 1499</h4>
+                      
+                    <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                        Add to Bag
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7114908/2018/8/9/6b6ba116-b104-4401-9fd0-7616273d29751533796834807-na-3661533796834385-1.jpg" alt="t-shirt">
+
+                <div class="card-body">
+                    <h5 class="card-title">RARE</h5>
+                    <p class="card-text">
+                        Black & White Jumpsuit
+                    </p>
+                    <h4 class="card-title">&#x20B9; 2099</h4>
+                      
+                    <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                        Add to Bag
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------------Women's Collection Ends Here---------------------------------------------------- -->
+        <div class="col-lg-3 mb-4">
+          <div class="card">
+              <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2275365/2019/9/10/4f24f563-c764-4f27-9fc5-9ad3dcf167621568108715062-Roadster-Men-White-Solid-Round-Neck-T-shirt-1641568108713591-1.jpg" alt="t-shirt">
+
+              <div class="card-body">
+                  <h5 class="card-title">Roadster</h5>
+                  <p class="card-text">
+                      Solid Round Neck T-shirt
+                  </p>
+                  <h4 class="card-title">&#x20B9; 1099</h4>
+
+                  <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                      Add to Bag
+                  </a>
+                 
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-3 mb-4">
+          <div class="card">
+              <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg" alt="t-shirt">
+
+              <div class="card-body">
+                  <h5 class="card-title">HRX by Hrithik Roshan</h5>
+                  <p class="card-text">
+                      Men Teal Blue Printed T-shirt
+                  </p>
+                  <h4 class="card-title">&#x20B9;999</h4>
+                    
+                  <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                      Add to Bag
+                  </a>
+                 
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-3 mb-4">
+          <div class="card">
+              <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14590816/2021/8/13/4d847e8a-1781-4763-b9e5-ef1e91ee6d3f1628846025090-Calvin-Klein-Jeans-Men-Tshirts-3721628846024567-1.jpg" alt="t-shirt">
+
+              <div class="card-body">
+                  <h5 class="card-title">Calvin Klein Jeans</h5>
+                  <p class="card-text">
+                      Black Cotton Printed T-shirt
+                  </p>
+                  <h4 class="card-title">&#x20B9; 1559</h4>
+                    
+                  <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                      Add to Bag
+                  </a>
+                 
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-3 mb-4">
+          <div class="card">
+              <img class="card-img-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8972451/2020/12/14/d748e67b-5bf7-4060-a005-bc98190cb5bf1607942574378-Kook-N-Keech-Marvel-Men-Black-Marvel-Printed-Round-Neck-T-sh-3.jpg" alt="t-shirt">
+
+              <div class="card-body">
+                  <h5 class="card-title">Kook N Keech Marvel</h5>
+                  <p class="card-text">
+                      Black Round Neck T-shirt
+                  </p>
+                  <h4 class="card-title">&#x20B9;999</h4>
+                    
+                  <a href="#" class="btn btn-outline-primary btn-sm add-cart">
+                      Add to Bag
+                  </a>
+                 
+              </div>
+          </div>
+      </div>
+          </div>
+          <!-- -------------------------Our Products Ends here--------------------------------------------------------------------- -->
+
+          <a href="./products.html"><p class="text-lg-center">View More</p></a>
+
+         <!-- Footer -->
+         <footer class="bg-gradient bg-dark text-center text-white" style="position: relative; width: 100%;">
+            <!-- Grid container -->
+            <div class="container p-5 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/myntra" role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/myntra" role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+          
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="./index.html" role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/myntra/" role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/company/myntra/?originalSubdomain=in" role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+          
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/user/myntradotcom" role="button"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+              © Aditi Jaiswal:
+              <a class="text-white" href="https://www.shapeai.tech/">ShapeAi</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+
+
+          
+    <!-- -----------------Format------------------------------------------------------------------------------------------ -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

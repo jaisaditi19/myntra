@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------------------------------CSS Links------------------------------------------------------------- -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
+    <!-- ----------------------------------------Font Awesome Link----------------------------------------------------- -->
+    <script src="https://kit.fontawesome.com/66f2b45681.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- -----------------------------------------BootStrap Link------------------------------------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- -----------------------------------------Google FOnt Link----------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- ------------------------------------------Google Font Link Ends----------------------------------------------- -->
+    <title>Myntra-Online Shopping in India</title>
+    <link rel="shortcut icon" href="./assests/favicon.ico">
+</head>
+<body>
+    <p class="fs-5 fst-italic" style="background: black; color: white;"><marquee direction="right" behavior="alternate">Free delivery on all orders above &#x20B9; 599/- </marquee></p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd; margin-top: 1px;">
+            <div class="container-fluid">
+                <a href="#" class="nav-brand"><img src="./assests/logo.png" alt="logo" class="" width="60" height="40" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav fw-bold" style="padding: 5px; margin-left: 25px;">
+                      <li class="nav-item " style="padding-left: 5px;">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item" style="padding-left: 5px;">
+                        <a class="nav-link active" href="./men.html">Men</a>
+                      </li>
+                      <li class="nav-item" style="padding-left: 5px;">
+                        <a class="nav-link active" href="./women.html">Women</a>
+                      </li>
+                      <li class="nav-item" style="padding-left: 5px;">
+                        <a class="nav-link active" href="./kids.html">Kids</a>
+                      </li>
+                    </ul>
+                    <form class="d-none d-lg-flex" style="margin-left: 35px; width: 470px;" >
+                        <input class="form-control " type="search" placeholder="Search for products, brands and more" aria-label="Search" >
+                        <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                      </form>
+                    <div style="margin-left: 55px;" class="d-none d-lg-block">
+                        <button type="submit" class="btn btn-light position-relative" data-bs-toggle="modal" data-bs-target="#newcardmodal"><i class="fas fa-user" style="font-size: 20px;">
+                            Profile 
+                        </i></button>
+                        <!-- <button class="btn position-absolute end-0" type="submit" data-bs-toggle="modal" data-bs-target="#newcardmodal"><i class="far fa-user" style="font-size: 20px;"></i></button>
+                        <a class="cart position-absolute end-2" href="./cart.html" style="color: black; text-decoration: none;"><i class="fas fa-shopping-cart" style="font-size: 20px;"></i><span>+0</span></button> -->
+                         <a class="cart" href="./cart.html">   <button type="button" class="btn btn-light position-relative cart"><i class="fas fa-shopping-cart" style="font-size: 20px;">
+                                Cart <span class="position-absolute top-0 start-200 translate-middle badge rounded-pill bg-secondary">+0</span>
+                            </i></button></a>
+                           </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+    <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+    <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+    <div class="modal fade" id="newcardmodal" tabindex="-1" aria-labelledby="newcardmodallable" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="mb-3">
+                      <label for="imageURL" class="form-label">Username</label>
+                      <input type="email" placeholder="abc@something.in"  class="form-control" id="imageURL" />
+                  </div>
+                  <div class="mb-3">
+                      <label for="taskTitle" class="form-label">Password</label>
+                      <input type="password" placeholder="Enter your password" class="form-control" id="taskTitle" />
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                      LOGIN
+                  </button>
+              </div>
+          </div>
+      </div>
+
+  </div>
+     <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+     <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+     <!----------------------------LOgin Form MOdAL---------------------------------------------------------------  -->
+   
+
+
+
+    <div class="container">
+      <!-- <div class="row" style="padding: 10px;">
+        <h5 class="col">PRODUCT</h5>
+        <h5 class="col">PRICE</h5>
+        <h5 class="col">QUANTITY</h5>
+        <h5 class="col">TOTAL</h5>
+      </div> -->
+      <div class="products">
+        <div class="container-fluid">
+          <div class="row">
+          <div class="col-md-10 col-11 mx-auto">
+          <div class="row mt-5 gx-3">
+          <!-- left side div -->
+          <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+          <div class="card p-4">
+          
+          <div class="row">
+          <!-- cart images div -->
+          <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+          <img src="./assests/${item.tag}.png" class="img-fluid" alt="cart img">
+          </div>
+              <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+      <div class="row">
+      <!-- product name  -->
+      <div class="col-6 card-title">
+      <h1 class="mb-4 product_name">${item.name}</h1>
+      
+      </div>
+              <div class="col-6">
+      <ul class="pagination justify-content-end set_quantity" style="margin-top:50%;">
+      <li class="page-item" >
+      <button class="page-link " onclick="decreaseNumber('textbox','itemval')">
+      <i class="fas fa-minus"></i> </button>
+      </li>
+      <li class="page-item" style="width:35px"><span style="margin-left:1rem;">${item.inCart}</span>
+      </li>
+      <li class="page-item">
+      <button class="page-link" onclick="increaseNumber('textbox','itemval')"> <i class="fas fa-plus"></i></button>
+      </li>
+      </ul>
+      </div>
+      <div class="row">
+      <div class="col-8 d-flex justify-content-between " >
+      <button class="btn remove_btn" id="rmv"><i class="fas fa-trash-alt" ></i> REMOVE ITEM</button>
+      </div>
+      <div class="col-4 d-flex justify-content-end price_money">
+      <h5><span id="itemval">&#x20B9; ${item.price}</span></h5>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="bg-gradient bg-dark text-center text-white" style="position: relative; margin-top: 30%;" >
+            <!-- Grid container -->
+            <div class="container p-5 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/myntra" role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/myntra" role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+          
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="./index.html" role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/myntra/" role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/company/myntra/?originalSubdomain=in" role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+          
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/user/myntradotcom" role="button"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+              © Aditi Jaiswal:
+              <a class="text-white" href="https://www.shapeai.tech/">ShapeAi</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+
+
+          
+    <!-- -----------------Format------------------------------------------------------------------------------------------ -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
